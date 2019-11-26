@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">    
+<script type='text/javascript'>
+function updateTransition() {
+  var el = document.getElementById("heart");
+   
+  if (el) {
+    el.id = "heart1";
+  } else {
+    el = document.getElementById("heart1");
+    el.id = "heart";
+  }
+   
+  return el;
+}
+
+var intervalID = window.setInterval(updateTransition, 3000);
+
+</script>
+</head>
+<body>
+    <div class="parent">
+        <img id="heart" src="heart_img.png" alt=""/>
+</body>
+</html>
